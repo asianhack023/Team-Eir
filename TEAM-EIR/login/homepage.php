@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+       <!DOCTYPE html>
 <html>
 <head> 
     <script src="https://kit.fontawesome.com/70a81ab19a.js" crossorigin="anonymous"></script>
@@ -7,6 +8,11 @@
     <link rel="stylesheet" text="type/css" href="../css/bootstrap.min.css">
 </head>
 <body>
+
+    
+    
+      <a href="logout.php">Logout</a>
+    </div>
     <div class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <h1>minders</h1>

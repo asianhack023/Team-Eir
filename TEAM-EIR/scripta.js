@@ -21,9 +21,12 @@ function appendMessage(sender, message) {
 }
 
 function getResponse(message) {
-    let response = "I'm sorry, I hope you feel better soon. I recommend talking to your closed ones.";
+    let response = "I'm sorry, I didn't understand that.";
+
     if (message.toLowerCase().includes("hi")) {
         response = "Hi! How can I help you?";
+    } 
+    
     if (message.toLowerCase().includes("sad")) {
         response = "It's okay to feel sad sometimes. Talking to someone can help.";
     } else if (message.toLowerCase().includes("anxious")) {
@@ -33,7 +36,7 @@ function getResponse(message) {
     } else if (message.toLowerCase().includes("help")) {
         response = "I'm here for you. Can you tell me more about what's bothering you?";
     }
-    }
+    
     setTimeout(() => {
         appendMessage("bot", response);
     }, 1000); // Simulate a delay in response
